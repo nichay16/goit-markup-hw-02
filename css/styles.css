@@ -1,0 +1,75 @@
+/* цвет основного текста #757575; */
+/* вторичний цвет текста #212121; */
+/* цвет основного текста герои #FFFFFF; */
+/* акцент #2196F3 */
+/* белый цвет для футера адрес #FFFFFF; */ 
+/* основной цвет фона #FFFFFF; */
+/* вторичный цвет фона #F5F4FA; */
+/* цвет футера #2F303A; */
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+
+}
+
+body {
+    background-color: #FFFFFF;
+    color: var(--primary-text-color);
+}
+
+ul {
+    list-style: none; /* убираю точки в списках  */
+}
+a {
+    text-decoration: none; /* убираю подчеркивание в ссылках */
+}
+/* логотип */
+.logo {
+    color: var(--accent-color);
+}
+.logo-text {
+    color: var(--title-text-color);
+}
+.logo-footer {
+    color: var(--white-color);
+}
+
+/* навигация по страницам сайта */
+.site-nav .link {
+    color: var(--title-text-color);
+}
+/* интерактивность */
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+/* навигация авторизации  */
+.auth-nav {
+}
+
+/* стили секции герои */
+.hero-title {
+    color: var(--white-color);
+}
+
+/* стили секций */
+.section-title {
+    color: var(--title-text-color);
+}
+
+/* стили списков секций */
+.features .title {
+    color: var(--title-text-color);
+}
+
+/* Подвал сайта */
+.map {
+    color: rgba(255,255,255,1);
+}
+.contact {
+    color: rgba(255, 255, 255, 0.6);
+}

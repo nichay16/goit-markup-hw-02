@@ -11,12 +11,12 @@
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
-    --white-color: #FFFFFF;
+    --primary-bg-color: #FFFFFF;
 
 }
 
 body {
-    background-color: #FFFFFF;
+    background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
 }
 
@@ -34,7 +34,7 @@ a {
     color: var(--title-text-color);
 }
 .logo-footer {
-    color: var(--white-color);
+    color: var(--primary-bg-color);
 }
 
 /* навигация по страницам сайта */
@@ -53,7 +53,7 @@ a {
 
 /* стили секции герои */
 .hero-title {
-    color: var(--white-color);
+    color: var(--primary-bg-color);
 }
 
 /* стили секций */

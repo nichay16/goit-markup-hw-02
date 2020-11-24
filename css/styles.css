@@ -6,13 +6,15 @@
 /* основной цвет фона #FFFFFF; */
 /* вторичный цвет фона #F5F4FA; */
 /* цвет футера #2F303A; */
+/* background-color - сделал исключительно для того, что бы ментору 
+было видно белый текст на черном фоне, потом пофиксю*/
 
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --primary-white-color: #FFFFFF;
-
+    --background-color-dark: #2F303A;
 }
 
 body {
@@ -26,34 +28,49 @@ ul {
 a {
     text-decoration: none; /* убираю подчеркивание в ссылках */
 }
+
 /* логотип */
 .logo {
     color: var(--accent-color);
 }
-.logo-text {
+
+/* светлый фон темный текст лого */
+.logo-text-dark {
     color: var(--title-text-color);
+
 }
-.logo-footer {
+
+/* темний фон светлый текст лого */
+.logo-text-light {
     color: var(--primary-white-color);
+    background-color: var(--background-color-dark);
 }
 
 /* навигация по страницам сайта */
 .site-nav .link {
     color: var(--title-text-color);
 }
+
 /* интерактивность */
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
 }
 
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
 /* навигация авторизации  */
-.auth-nav {
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+    color: var(--accent-color);
 }
 
 /* стили секции герои */
 .hero-title {
     color: var(--primary-white-color);
+    background-color: var(--background-color-dark);
 }
 
 /* стили секций */
@@ -69,7 +86,18 @@ a {
 /* Подвал сайта */
 .map {
     color: rgba(255,255,255,1);
+    background-color: var(--background-color-dark);
 }
 .contact {
     color: rgba(255, 255, 255, 0.6);
+    background-color: var(--background-color-dark);
 }
+
+/* кнопка */
+
+.button {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border-color: transparent;
+    border-radius: 4px;
+  }

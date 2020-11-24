@@ -5,112 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!--Шапка сайта-->
-    <header>
-        <!--главная навигация сайта-->
-        <nav>
-            <!--логотип-->
-            <a href="./index.html" class="logo">Web<samp class="logo-text-dark">Studio</samp></a>
-            <!--меню-->
+    <!-- ! site header-->
+    <header class="header">
+        <!--main site navigation-->
+        <nav class="navigation">
+            <!--the logo-->
+            <a class="logo" href="./index.html">Web<samp class="logo-text-dark">Studio</samp></a>
+            <!--menu-->
             <ul class="site-nav">
-                <li><a href="./index.html" class="link">Студия</a></li>
-                <li><a href="#" class="link current">Портфолио</a></li>
-                <li><a href="#" class="link">Контакты</a></li>
+                <li class="site-nav-item"><a class="site-nav-link current" href="#">Студия</a></li>
+                <li class="site-nav-item"><a class="site-nav-link" href="./portfolio.html">Портфолио</a></li>
+                <li class="site-nav-item"><a class="site-nav-link" href="#">Контакты</a></li>
             </ul>
-            <!--контакты-->
-            <ul class="auth-nav">
-                <li><a href="#" class="link">info@devstudio.com</a></li>
-                <li><a href="#" class="link">+38 096 111 11 11</a></li>
+            <!-- header address, contact-->
+            <address class="header-address">
+                <a class="header-contact-email" href="mailto:info@example.com">info@example.com</a>
+                <a class="header-contact-tell" href="tel:+380991111111">+38 099 111 11 11</a>
+            </address>
             </ul>
         </nav>
     </header>
-    <!--Уникальный контент страницы-->
+    <!--! unique page content-->
     <main>
-        <!-- фильтер портфолио -->
-        <ul>
-            <li><a href="X">Все</a></li>
-            <li><a href="X">Веб-сайты</a></li>
-            <li><a href="X">Приложения</a></li>
-            <li><a href="X">Дизайн</a></li>
-            <li><a href="X">Маркетинг</a></li>
+        <!-- portfolio filter -->
+        <ul class="subtitle">
+            <li class="subtitle-item">
+                <button class="portfolio-button current">Все</button></li>
+            <li class="subtitle-item">
+                <button class="portfolio-button">Веб-сайты</button></li>
+            <li class="subtitle-item">
+                <button class="portfolio-button">Приложения</button></li>
+            <li class="subtitle-item">
+                <button class="portfolio-button">Дизайн</button></li>
+            <li class="subtitle-item">
+                <button class="portfolio-button">Маркетинг</button></li>
         </ul>
 
-        <h2>Фильтер</h2>
-        <ul class="features">
+        <h2 class="section-title">Фильтер</h2>
+        <ul class="subtitle">
 
-            <li>
-                <img src="./img/portfolio/img 1.jpg" alt="ноутбук">
+            <li class="subtitle-item">
+                <img class="subtitle-img" src="./img/portfolio/img 1.jpg" alt="ноутбук">
                 <h3 class="title">Технокряк</h3>
-                <p>Веб-сайт</p>
+                <p class="text">Веб-сайт</p>
             </li>
 
-            <li>                
-                <img src="./img/portfolio/img 2.jpg" alt="два баскетболиста">
+            <li class="subtitle-item">                
+                <img class="subtitle-img" src="./img/portfolio/img 2.jpg" alt="два баскетболиста">
                 <h3 class="title">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-                <p>Дизайн</p>
+                <p class="text">Дизайн</p>
             </li>
 
-            <li>                
-                <img src="./img/portfolio/img 3.jpg" alt="логотип ресторана">
+            <li class="subtitle-item">                
+                <img class="subtitle-img" src="./img/portfolio/img 3.jpg" alt="логотип ресторана">
                 <h3 class="title">Ресторан <span lang="en">Seafood</span></h3>
-                <p>Приложение</p>
+                <p class="text">Приложение</p>
             </li>
 
-            <li>                
-                <img src="./img/portfolio/img 4.jpg" alt="наушники большие">
+            <li class="subtitle-item">                
+                <img class="subtitle-img" src="./img/portfolio/img 4.jpg" alt="наушники большие">
                 <h3 class="title">Проект <span lang="en">Prime</span></h3>
-                <p>Маркетинг</p>
+                <p class="text">Маркетинг</p>
             </li>
 
-            <li>                
-                <img src="./img/portfolio/img 5.jpg" alt="две коробки">
+            <li class="subtitle-item">                
+                <img class="subtitle-img" src="./img/portfolio/img 5.jpg" alt="две коробки">
                 <h3 class="title">Проект <span lang="en">Boxes</span></h3>
-                <p>Приложение</p>
+                <p class="text">Приложение</p>
             </li>
 
-            <li>                
-                <img src="./img/portfolio/img 6.jpg" alt="монитор">
+            <li class="subtitle-item">                
+                <img class="subtitle-img" src="./img/portfolio/img 6.jpg" alt="монитор">
                 <h3 lang="en" class="title">Inspiration has no Borders</h3>
-                <p>Веб-сайт</p>
+                <p class="text">Веб-сайт</p>
             </li>
 
-            <li>
-                <img src="./img/portfolio/img 7.jpg" alt="открытая книга">
+            <li class="subtitle-item">
+                <img class="subtitle-img" src="./img/portfolio/img 7.jpg" alt="открытая книга">
                 <h3 class="title">Издание <span lang="en">Limited Edition</span></h3>
-                <p>Дизайн</p>
+                <p class="text">Дизайн</p>
             </li>
 
-            <li>
-                <img src="./img/portfolio/img 8.jpg" alt="жетон">
+            <li class="subtitle-item">
+                <img class="subtitle-img" src="./img/portfolio/img 8.jpg" alt="жетон">
                 <h3 class="title">Проект <span lang="en">LAB</span></h3>
-                <p>Маркетинг</p>
+                <p class="text">Маркетинг</p>
             </li>
 
-            <li>
-                <img src="./img/portfolio/img 9.jpg" alt="ноутбук">
+            <li class="subtitle-item">
+                <img class="subtitle-img" src="./img/portfolio/img 9.jpg" alt="ноутбук">
                 <h3 lang="en" class="title">Growing Business</h3>
-                <p>Приложение</p>
+                <p class="text">Приложение</p>
             </li>
         </ul>
 
     </main>
-    <!--Подвал сайта-->
-    <footer>
-        <!--логотип-->
-        <a href="./index.html" class="logo">Web<samp class="logo-text-light">Studio</samp></a>
+
+    <!--! footer site-->
+    <footer class="footer">
+        <!--the logo-->
+        <a class="logo" href="./index.html">Web<samp class="logo-text-light">Studio</samp></a>
         </a>
-        <address class="address">
-            <a href="https://goo.gl/maps/rmMPoWMHuQChFa8u6" class="map">г. Киев, пр-т Леси Украинки, 26</a>
-            <a href="mailto:info@example.com" class="contact">info@example.com</a>
-            <a href="tel:+380991111111" class="contact">+38 099 111 11 11</a>
+        <!--address, contact-->
+        <address class="footer-address">
+            <a class="footer-contact-address" href="https://goo.gl/maps/rmMPoWMHuQChFa8u6" class="map">г. Киев, пр-т Леси
+                Украинки, 26</a>
+            <a class="footer-contact-email" href="mailto:info@example.com">info@example.com</a>
+            <a class="footer-contact-tell" href="tel:+380991111111">+38 099 111 11 11</a>
         </address>
     </footer>
 

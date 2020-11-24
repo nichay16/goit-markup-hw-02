@@ -158,13 +158,15 @@ ul {list-style: none;}
 /* ! =======================END MAIN NAVIGATION===================== */
 
 /* ! ======================FOOTER============================ */
+.footer {
+    background-color: var(--background-color-dark);
+}
 .footer-address{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    background-color: var(--background-color-dark);
 }
 
 .footer-contact-address {

@@ -1,11 +1,11 @@
-/* цвет основного текста #757575; */
-/* вторичний цвет текста #212121; */
-/* цвет основного текста герои #FFFFFF; */
-/* акцент #2196F3 */
-/* белый цвет для футера адрес #FFFFFF; */ 
-/* основной цвет фона #FFFFFF; */
-/* вторичный цвет фона #F5F4FA; */
-/* цвет футера #2F303A; */
+/* body text color #757575; */
+/* secondary text color #212121; */
+/* main text color heroes #FFFFFF; */
+/* accent #2196F3 */
+/* white for footer address #FFFFFF; */ 
+/* main background color #FFFFFF; */
+/* secondary background color #F5F4FA; */
+/* footer background color #2F303A; */
 /* background-color - сделал исключительно для того, что бы ментору 
 было видно белый текст на черном фоне, потом пофиксю*/
 
@@ -18,86 +18,183 @@
 }
 
 body {
-    background-color: var(--primary-white-color);
-    color: var(--primary-text-color);
+    font-style: normal;
 }
 
-ul {
-    list-style: none; /* убираю точки в списках  */
-}
-a {
-    text-decoration: none; /* убираю подчеркивание в ссылках */
+a[href] {
+    text-decoration: none; /* remove the underline in links */
 }
 
-/* логотип */
-.logo {
+ul {list-style: none;}
+
+/* ! =======================MAIN NAVIGATION===================== */
+/* * =================THE LOGO================= */
+.logo,
+.logo-text-dark,
+.logo-text-light {
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
     color: var(--accent-color);
 }
 
-/* светлый фон темный текст лого */
+/* light background dark text logo */
 .logo-text-dark {
     color: var(--title-text-color);
-
 }
 
-/* темний фон светлый текст лого */
+/* dark background light text logo */
 .logo-text-light {
     color: var(--primary-white-color);
     background-color: var(--background-color-dark);
 }
+/* * =================END THE LOGO================= */
 
-/* навигация по страницам сайта */
-.site-nav .link {
+/* * =================MENU========================= */
+
+/* navigation through site pages */
+.site-nav-link {
+    font-family:'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
 
-/* интерактивность */
-.site-nav .link:hover,
-.site-nav .link:focus {
+/* interactivity */
+.site-nav-link:hover,
+.site-nav-link:focus,
+.header-contact-email:hover,
+.header-contact-email:focus,
+.header-contact-tell:hover,
+.header-contact-tell:focus {
     color: var(--accent-color);
 }
 
-.site-nav .link.current {
+/* current page */
+.site-nav-link.current {
     color: var(--accent-color);
 }
 
-/* навигация авторизации  */
-.auth-nav .link:hover,
-.auth-nav .link:focus {
-    color: var(--accent-color);
+.header-address {
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
 }
 
-/* стили секции герои */
+.header-contact-email {
+    color: #2196F3;
+}
+
+.header-contact-tell {
+   color: #757575;
+}
+
+/* * =================END MENU========================= */
+
+/* * ===================HEROES SECTION STYLES=================== */
+
+.hero {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    background-color: var(--background-color-dark); 
+}
+
 .hero-title {
-    color: var(--primary-white-color);
-    background-color: var(--background-color-dark);
+    color: var(--primary-white-color); 
+}
+/* * ===================END HEROES SECTION STYLES=================== */
+
+/* * ========================SECTION STYLES==================== */
+
+.section {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
 }
 
-/* стили секций */
 .section-title {
     color: var(--title-text-color);
+    text-align: center;
 }
 
-/* стили списков секций */
+/* section list styles
 .features .title {
+    color: var(--title-text-color); */
+}
+.subtitle-item {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-transform: uppercase;
     color: var(--title-text-color);
 }
 
-/* Подвал сайта */
-.map {
-    color: rgba(255,255,255,1);
-    background-color: var(--background-color-dark);
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    color: var(--primary-text-color);
 }
-.contact {
-    color: rgba(255, 255, 255, 0.6);
+
+
+/* * ========================END SECTION STYLES==================== */
+
+/* ! =======================END MAIN NAVIGATION===================== */
+
+/* ! ======================FOOTER============================ */
+.footer-address{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
     background-color: var(--background-color-dark);
 }
 
-/* кнопка */
+.footer-contact-address {
+    color: rgba(255,255,255,1);
+}
+
+.footer-contact-email,
+.footer-contact-tell {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ! ======================END FOOTER============================ */
+
+
+/* TODO =========================BUTTON============================= */
 
 .button {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     border-color: transparent;
     border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
   }
+
+/* TODO =========================END BUTTON============================= */

@@ -18,9 +18,12 @@
     --portfolio-button-background-color: #F5F4FA;
 }
 
-body {
+body,
+address {
     font-style: normal;
 }
+
+address
 
 a[href] {
     text-decoration: none; /* remove the underline in links */
@@ -69,8 +72,7 @@ ul {list-style: none;}
 .site-nav-link:focus,
 .header-contact-email:hover,
 .header-contact-email:focus,
-.header-contact-tell:hover,
-.header-contact-tell:focus {
+.header-contact-tell:hover {
     color: var(--accent-color);
 }
 
@@ -81,17 +83,15 @@ ul {list-style: none;}
 }
 /* todo ------------ end interactivity-------------- */
 
+
 /* todo -------------current page-------------- */
+
 .site-nav-link.current {
     color: var(--accent-color);
 }
 
-.portfolio-button.current {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-}
-
 /* todo -------------end current page-------------- */
+
 
 /* todo ============hide title=========== */
 
